@@ -35,7 +35,7 @@ class AuthController extends Controller
         if($validated){
             return redirect()->route('dashboard')->with('success','Login Successfull');
         }else{
-            return redirect()->back()->with('error','Ivalid credentails.');
+            return redirect()->back()->with('error','Invalid credentails.');
         }
     }
 }

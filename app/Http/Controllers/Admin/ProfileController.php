@@ -13,4 +13,9 @@ class ProfileController extends Controller
         ];
         return view('admin.dashboard',$data);
     }
+
+    public function logout(){
+        auth()->logout();
+        return redirect()->route('getLogin')->with('success','You have been successfully logout out');
+    }
 }
